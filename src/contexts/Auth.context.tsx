@@ -38,7 +38,8 @@ export function AuthProvider({ children }: Provider) {
         return false;
       }
 
-      await sleep(1000);
+      await sleep(300);
+
       setIsAuthenticated(true);
       localStorage.setItem('react-router.token', '123');
       return true;

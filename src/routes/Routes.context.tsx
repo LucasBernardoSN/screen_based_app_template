@@ -42,7 +42,7 @@ export function RoutesProvider({ children }: ProviderProps) {
 
       const asyncRoutes = routesConfig;
 
-      await sleep(1000);
+      await sleep(300);
 
       setState({
         routesConfig: asyncRoutes,
