@@ -71,7 +71,9 @@ export function Nav() {
                   {section.screens.map((screen) => (
                     <React.Fragment key={screen.path}>
                       <NavLink
-                        href={`/${section.path}/${screen.path}`}
+                        href={`${import.meta.env.BASE_URL}/${section.path}/${
+                          screen.path
+                        }`}
                         icon={screen.icon ?? Paperclip}
                       >
                         {screen.title}

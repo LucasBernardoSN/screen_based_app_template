@@ -96,12 +96,12 @@ function createSectionList(routes: Routes) {
 export function createRouter(config: Routes) {
   return createBrowserRouter([
     {
-      path: '*',
+      path: import.meta.env.BASE_URL,
       element: <PrivateRoutes />,
       children: [
         {
           path: '*',
-          element: <Navigate to="/home" />,
+          element: <Navigate to="home" />,
         },
         {
           element: <Outlet />,
